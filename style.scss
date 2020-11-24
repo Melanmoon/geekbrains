@@ -164,5 +164,52 @@ main{
     .section4{
         height: 424px;
         background-color:#f5f5f5 ;
+        text-align: center;
+        .section4_block{
+            margin: 0 0 0 10px;
+            flex-wrap: wrap;
+            display: flex;
+            .section4_item{
+                text-align: left;
+                display: flex;
+                width: 46%;
+                margin: 0px 20px 30px 20px ;
+                .section4_img{
+                    min-width: 70px;
+                    height: 70px;
+                    border-radius: 50%;
+                    background-color: $content_color;
+                    margin-right: 30px;
+                }
+            }
+        }
+
     }
+    .section4 h3{
+        padding: 40px 0 30px 0;
+    }
+    .section4_item p{
+        padding: 10px;
+        background-color: #ebebeb;
+        border-radius: 6px;
+        line-height: 20px;
+        font-size: 14px;
+        font-style: italic;
+        position: relative;
+    }
+    span{
+        margin: 7px 0 0;
+        display: block;
+        color: #838383e0;
+    }
+    .section4_item p:before{
+        content: "";
+        display: block;
+        position: absolute;
+        border: 13px solid transparent; 
+        border-right: 13px solid#ebebeb;
+        top: 17%;
+        left: -5%;
+    }
+    
 }
