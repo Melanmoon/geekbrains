@@ -5,7 +5,7 @@
           box-sizing: border-box;
 }
 
-h3 {
+h2 {
   font-family: arial;
   color: #445162;
   font-size: 30px;
@@ -27,7 +27,7 @@ header {
           align-items: center;
 }
 
-header .header_left {
+header .header_list {
   height: 323px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -40,13 +40,13 @@ header .header_left {
       justify-content: space-around;
 }
 
-header .h1_header {
+header .header_list h1 {
   color: #ffffff;
   font-size: 60px;
   font-weight: 300;
 }
 
-header .ul_header {
+header .header_list ul {
   list-style-type: none;
 }
 
@@ -60,12 +60,6 @@ header .link_header {
 header .link_header::before {
   content: url(img/check.png);
   margin-right: 10px;
-}
-
-header .header_right {
-  width: 470px;
-  height: 215px;
-  background-color: #ffffff;
 }
 
 main {
@@ -84,14 +78,14 @@ main section {
           align-items: center;
 }
 
-main .section1 {
+main .about {
   height: 323px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-main .section1 .section1_left {
+main .about .info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -107,24 +101,18 @@ main .section1 .section1_left {
   line-height: 22px;
 }
 
-main .section1 .section1_right {
-  width: 420px;
-  height: 240px;
-  background-color: #445162;
-}
-
-main .section2 {
+main .pluse {
   text-align: center;
   height: 420px;
   background-color: #f5f5f5;
   position: relative;
 }
 
-main .section2 .section2_text {
+main .pluse .pluse_text {
   padding: 50px 0 20px 0;
 }
 
-main .section2 .section2_pluses {
+main .pluse .pluses {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -136,21 +124,21 @@ main .section2 .section2_pluses {
   font-size: 15px;
 }
 
-main .section2 .section2_p {
+main .pluse .pluses li {
   max-width: 43%;
   margin: 0px 80px 20px 0px;
   position: relative;
   line-height: 24px;
 }
 
-main .section2 .section2_p:before {
+main .pluse .pluses li:before {
   content: url(img/plus.png);
   position: absolute;
   left: -8%;
   top: 6%;
 }
 
-main .section3 {
+main .screenshots {
   height: 490px;
   width: 1280px;
   text-align: center;
@@ -159,11 +147,7 @@ main .section3 {
           justify-content: center;
 }
 
-main .section3 .section3_text {
-  margin: 50px 0 60px 0;
-}
-
-main .section3 .section3_block {
+main .screenshots ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -173,9 +157,10 @@ main .section3 .section3_block {
       justify-content: space-around;
   justify-items: center;
   position: relative;
+  list-style-type: none;
 }
 
-main .section3 .section3_block .section3_item {
+main .screenshots li {
   width: 29%;
   text-align: left;
   line-height: 24px;
@@ -184,13 +169,13 @@ main .section3 .section3_block .section3_item {
   margin: 0 30px 25px 30px;
 }
 
-main .section3 .section3_block .section3_item h4 {
+main .screenshots h3 {
   color: #445162;
   font-size: 22px;
   margin: 0 0 10px 0;
 }
 
-main .section3 .section3_block .section3_item::before {
+main .screenshots li:before {
   content: "";
   width: 200px;
   height: 150px;
@@ -200,13 +185,17 @@ main .section3 .section3_block .section3_item::before {
   left: -60%;
 }
 
-main .section4 {
+main .screenshots h2 {
+  margin: 50px 0 60px 0;
+}
+
+main .rewiews {
   height: 424px;
   background-color: #f5f5f5;
   text-align: center;
 }
 
-main .section4 .section4_block {
+main .rewiews .rewiews_block {
   margin: 0 0 0 10px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -215,7 +204,7 @@ main .section4 .section4_block {
   display: flex;
 }
 
-main .section4 .section4_block .section4_item {
+main .rewiews .rewiews_block .rewiews_item {
   text-align: left;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -224,7 +213,7 @@ main .section4 .section4_block .section4_item {
   margin: 0px 20px 30px 20px;
 }
 
-main .section4 .section4_block .section4_item .section4_img {
+main .rewiews .rewiews_block .rewiews_item .rewiews_img {
   min-width: 70px;
   height: 70px;
   border-radius: 50%;
@@ -232,11 +221,11 @@ main .section4 .section4_block .section4_item .section4_img {
   margin-right: 30px;
 }
 
-main .section4 h3 {
+main .rewiews h2 {
   padding: 40px 0 30px 0;
 }
 
-main .section4_item p {
+main .rewiews_item p {
   padding: 10px;
   background-color: #ebebeb;
   border-radius: 6px;
@@ -252,7 +241,7 @@ main span {
   color: #838383e0;
 }
 
-main .section4_item p:before {
+main .rewiews_item p:before {
   content: "";
   display: block;
   position: absolute;
@@ -262,7 +251,7 @@ main .section4_item p:before {
   left: -5%;
 }
 
-main .section5 {
+main .price {
   height: 650px;
   text-align: center;
   display: -webkit-box;
@@ -274,7 +263,7 @@ main .section5 {
           flex-direction: column;
 }
 
-main .section5 .price_block {
+main .price .price_block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -287,7 +276,7 @@ main .section5 .price_block {
   margin: 0 auto;
 }
 
-main .section5 .price_block .price_standart {
+main .price .price_block .price_standart {
   width: 300px;
   height: 300px;
   background-color: #445162;
@@ -306,7 +295,7 @@ main .section5 .price_block .price_standart {
           align-items: center;
 }
 
-main .section5 .price_block .price_premium {
+main .price .price_block .price_premium {
   width: 300px;
   height: 400px;
   background-color: #445162;
@@ -325,7 +314,7 @@ main .section5 .price_block .price_premium {
           align-items: center;
 }
 
-main .section5 .price_block .price_lux {
+main .price .price_block .price_lux {
   width: 300px;
   height: 500px;
   background-color: #445162;
@@ -344,28 +333,34 @@ main .section5 .price_block .price_lux {
           align-items: center;
 }
 
-main .section5 .price_block .price_list {
+main .price .price_block .price_list {
   text-align: left;
   color: white;
   font-size: 14px;
   line-height: 24px;
 }
 
-main .section5 .price_block .price_btn {
+main .price .price_block .price_btn {
   width: 260px;
   height: 50px;
   border-radius: 10px;
   border: none;
   font-size: 18px;
   margin-bottom: 14px;
+  text-transform: uppercase;
 }
 
-main .price_block h3 {
-  color: white;
-  margin-top: 15px;
+main .price .price_block .price_btn:hover {
+  background: #bdbdbd;
 }
 
 main .price_block h2 {
+  color: white;
+  margin-top: 15px;
+  font-size: 24px;
+}
+
+main .price_block h3 {
   color: #445162;
   background-color: white;
   padding: 6px;
@@ -454,6 +449,10 @@ footer .contacts_block .links_item .links_list {
   line-height: 38px;
   font-family: Arial, Helvetica, sans-serif;
   position: relative;
+}
+
+footer .contacts_block .links_item .list:hover {
+  color: #bdbdbd;
 }
 
 footer .contacts_block .links_item .skype_icon:before {
