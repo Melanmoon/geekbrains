@@ -11,6 +11,12 @@ h2 {
   font-size: 30px;
 }
 
+h1 {
+  color: #ffffff;
+  font-size: 60px;
+  font-weight: 300;
+}
+
 header {
   max-width: 1280px;
   height: 323px;
@@ -27,7 +33,7 @@ header {
           align-items: center;
 }
 
-header .header_list {
+header .header_text {
   height: 323px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -40,13 +46,7 @@ header .header_list {
       justify-content: space-around;
 }
 
-header .header_list h1 {
-  color: #ffffff;
-  font-size: 60px;
-  font-weight: 300;
-}
-
-header .header_list ul {
+header .header_list {
   list-style-type: none;
 }
 
@@ -108,11 +108,11 @@ main .pluse {
   position: relative;
 }
 
-main .pluse .pluse_text {
-  padding: 50px 0 20px 0;
+main .pluse h2 {
+  padding: 30px 0 40px 0;
 }
 
-main .pluse .pluses {
+main .pluse ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -124,14 +124,14 @@ main .pluse .pluses {
   font-size: 15px;
 }
 
-main .pluse .pluses li {
+main .pluse li {
   max-width: 43%;
   margin: 0px 80px 20px 0px;
   position: relative;
   line-height: 24px;
 }
 
-main .pluse .pluses li:before {
+main .pluse li:before {
   content: url(img/plus.png);
   position: absolute;
   left: -8%;
@@ -145,6 +145,16 @@ main .screenshots {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+main .screenshots h3 {
+  color: #445162;
+  font-size: 22px;
+  margin: 0 0 10px 0;
+}
+
+main .screenshots h2 {
+  margin: 50px 0 60px 0;
 }
 
 main .screenshots ul {
@@ -169,12 +179,6 @@ main .screenshots li {
   margin: 0 30px 25px 30px;
 }
 
-main .screenshots h3 {
-  color: #445162;
-  font-size: 22px;
-  margin: 0 0 10px 0;
-}
-
 main .screenshots li:before {
   content: "";
   width: 200px;
@@ -185,17 +189,13 @@ main .screenshots li:before {
   left: -60%;
 }
 
-main .screenshots h2 {
-  margin: 50px 0 60px 0;
-}
-
 main .rewiews {
   height: 424px;
   background-color: #f5f5f5;
   text-align: center;
 }
 
-main .rewiews .rewiews_block {
+main .rewiews ul {
   margin: 0 0 0 10px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -204,7 +204,7 @@ main .rewiews .rewiews_block {
   display: flex;
 }
 
-main .rewiews .rewiews_block .rewiews_item {
+main .rewiews li {
   text-align: left;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -213,11 +213,7 @@ main .rewiews .rewiews_block .rewiews_item {
   margin: 0px 20px 30px 20px;
 }
 
-main .rewiews .rewiews_block .rewiews_item .rewiews_img {
-  min-width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  background-color: #445162;
+main .rewiews img {
   margin-right: 30px;
 }
 
@@ -225,7 +221,7 @@ main .rewiews h2 {
   padding: 40px 0 30px 0;
 }
 
-main .rewiews_item p {
+main .rewiews p {
   padding: 10px;
   background-color: #ebebeb;
   border-radius: 6px;
@@ -235,13 +231,13 @@ main .rewiews_item p {
   position: relative;
 }
 
-main span {
+main .rewiews span {
   margin: 7px 0 0;
   display: block;
   color: #838383e0;
 }
 
-main .rewiews_item p:before {
+main .rewiews p:before {
   content: "";
   display: block;
   position: absolute;
@@ -276,7 +272,7 @@ main .price .price_block {
   margin: 0 auto;
 }
 
-main .price .price_block .price_standart {
+main .price .price_standart {
   width: 300px;
   height: 300px;
   background-color: #445162;
@@ -295,7 +291,7 @@ main .price .price_block .price_standart {
           align-items: center;
 }
 
-main .price .price_block .price_premium {
+main .price .price_premium {
   width: 300px;
   height: 400px;
   background-color: #445162;
@@ -314,7 +310,7 @@ main .price .price_block .price_premium {
           align-items: center;
 }
 
-main .price .price_block .price_lux {
+main .price .price_lux {
   width: 300px;
   height: 500px;
   background-color: #445162;
@@ -333,14 +329,14 @@ main .price .price_block .price_lux {
           align-items: center;
 }
 
-main .price .price_block .price_list {
+main .price .price_list {
   text-align: left;
   color: white;
   font-size: 14px;
   line-height: 24px;
 }
 
-main .price .price_block .price_btn {
+main .price .price_btn {
   width: 260px;
   height: 50px;
   border-radius: 10px;
@@ -350,17 +346,17 @@ main .price .price_block .price_btn {
   text-transform: uppercase;
 }
 
-main .price .price_block .price_btn:hover {
+main .price .price_btn:hover {
   background: #bdbdbd;
 }
 
-main .price_block h2 {
+main .price .price_block h2 {
   color: white;
   margin-top: 15px;
   font-size: 24px;
 }
 
-main .price_block h3 {
+main .price .price_block h3 {
   color: #445162;
   background-color: white;
   padding: 6px;
@@ -395,7 +391,7 @@ footer .contacts_block {
   display: flex;
 }
 
-footer .contacts_block .send_item {
+footer .send_item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -411,7 +407,7 @@ footer .contacts_block .send_item {
   height: 330px;
 }
 
-footer .contacts_block .send_item .input_footer {
+footer .input_footer {
   height: 40px;
   border-radius: 6px;
   border: none;
@@ -419,7 +415,7 @@ footer .contacts_block .send_item .input_footer {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-footer .contacts_block .send_item textarea {
+footer textarea {
   height: 150px;
   border-radius: 6px;
   border: none;
@@ -428,7 +424,7 @@ footer .contacts_block .send_item textarea {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-footer .contacts_block .send_item .send_btn {
+footer .send_btn {
   width: 140px;
   height: 40px;
   border-radius: 6px;
@@ -437,12 +433,12 @@ footer .contacts_block .send_item .send_btn {
   font-size: 18px;
 }
 
-footer .contacts_block .links_item {
+footer .links_item {
   margin-left: 30px;
   position: relative;
 }
 
-footer .contacts_block .links_item .links_list {
+footer .links_list {
   color: white;
   text-decoration: none;
   list-style-type: none;
@@ -451,39 +447,39 @@ footer .contacts_block .links_item .links_list {
   position: relative;
 }
 
-footer .contacts_block .links_item .list:hover {
+footer .list:hover {
   color: #bdbdbd;
 }
 
-footer .contacts_block .links_item .skype_icon:before {
+footer .skype_icon:before {
   content: url(img/skype.png);
   position: absolute;
   top: -18%;
   left: -18%;
 }
 
-footer .contacts_block .links_item .icq_icon:before {
+footer .icq_icon:before {
   content: url(img/icq.png);
   position: absolute;
   top: -18%;
   left: -40%;
 }
 
-footer .contacts_block .links_item .email_icon:before {
+footer .email_icon:before {
   content: url(img/email.png);
   position: absolute;
   top: -18%;
   left: -22%;
 }
 
-footer .contacts_block .links_item .phone_icon:before {
+footer .phone_icon:before {
   content: url(img/phone.png);
   position: absolute;
   top: -18%;
   left: -26%;
 }
 
-footer .contacts_block .links_item .soc_incons {
+footer .soc_incons {
   position: absolute;
   left: -20%;
   top: 56%;
